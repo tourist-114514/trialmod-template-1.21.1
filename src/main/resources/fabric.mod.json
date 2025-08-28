@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "trialmod",
+	"version": "${version}",
+	"name": "TrialMod",
+	"description": "It's a new mod, because tourist114514 will learn mod-programming",
+	"authors": [
+		"tourist114514"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/trialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.tourist.trialmod.TrialMod"
+		],
+		"fabric-datagen": [
+			"com.tourist.trialmod.TrialModDataGenerator"
+		],
+        "client": [
+            "com.tourist.trialmod.TrialModClient"
+        ]
+	},
+	"mixins": [
+		"trialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
