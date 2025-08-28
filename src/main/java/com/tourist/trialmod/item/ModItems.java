@@ -3,11 +3,9 @@ import com.tourist.trialmod.TrialMod;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
@@ -26,6 +24,7 @@ public class ModItems {
 
     //初始化模组物品
     public static void registerModItems() {
+        //将NetherAsh添加进原材料分类中
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIG);
         TrialMod.LOGGER.info("Registering Mod Items");
     }
