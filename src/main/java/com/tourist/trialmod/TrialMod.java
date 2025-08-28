@@ -1,5 +1,6 @@
 package com.tourist.trialmod;
 
+import com.tourist.trialmod.item.ModItemGroups;
 import com.tourist.trialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -20,6 +21,7 @@ public class TrialMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
         ModItems.registerModItems();
+        ModItemGroups.registerModItemGroups();
 
 		LOGGER.info("Hello Fabric world!");
 
