@@ -1,4 +1,9 @@
 {
   "item.trialmod.nether_ash":"Nether Ash",
+  "item.trialmod.lead_ingot": "Lead Ingot",
+
+  "block.trialmod.lead_block": "Lead Block",
+  "block.trialmod.nether_ash_block": "Nether Ash Block",
+
   "itemGroup.trialmod.trial_group":"Trial Group"
 }

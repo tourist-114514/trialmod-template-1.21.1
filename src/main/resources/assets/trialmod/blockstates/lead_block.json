@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "trialmod:block/lead_block"
+    }
+  }
+}

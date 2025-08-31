@@ -1,3 +1,9 @@
 {
-  "item.trialmod.nether_ash": "下界灰烬"
+  "item.trialmod.nether_ash": "下界灰烬",
+  "item.trialmod.lead_ingot": "铅锭",
+
+  "block.trialmod.lead_block": "铅块",
+  "block.trialmod.nether_ash_block": "下界灰烬块",
+
+  "itemGroup.trialmod.trial_group": "Trial Group"
 }

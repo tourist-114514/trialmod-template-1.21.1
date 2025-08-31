@@ -1,6 +1,7 @@
 package com.tourist.trialmod.item;
 
 import com.tourist.trialmod.TrialMod;
+import com.tourist.trialmod.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -21,7 +22,12 @@ public class ModItemGroups {
                         .displayName(Text.translatable("itemGroup.trialmod.trial_group"))
                         .icon(() ->new ItemStack(ModItems.NETHER_ASH))
                         .entries((displayContext, entries) ->{
+                            //普通物品
                             entries.add(ModItems.NETHER_ASH);
+                            entries.add(ModItems.LEAD_INGOT);
+                            //方块
+                            entries.add(ModBlocks.LEAD_BLOCK);
+                            entries.add(ModBlocks.NETHER_ASH_BLOCK);
                         } )
                         .build());
 

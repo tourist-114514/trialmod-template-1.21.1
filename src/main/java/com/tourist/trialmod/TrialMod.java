@@ -1,5 +1,6 @@
 package com.tourist.trialmod;
 
+import com.tourist.trialmod.block.ModBlocks;
 import com.tourist.trialmod.item.ModItemGroups;
 import com.tourist.trialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -20,8 +21,10 @@ public class TrialMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+        //初始化
         ModItems.registerModItems();
         ModItemGroups.registerModItemGroups();
+        ModBlocks.registerModBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 
