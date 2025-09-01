@@ -1,9 +1,11 @@
 package com.tourist.trialmod.item;
 import com.tourist.trialmod.TrialMod;
+//import com.tourist.trialmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 //import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-//import net.minecraft.item.ItemGroups;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -22,12 +24,14 @@ public class ModItems {
     private static void addItemToIG(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(NETHER_ASH);
         fabricItemGroupEntries.add(LEAD_INGOT);
+        //fabricItemGroupEntries.add(ModBlocks.LEAD_BLOCK);
+        //fabricItemGroupEntries.add(ModBlocks.NETHER_ASH_BLOCK);
     }
 
     //初始化模组物品
     public static void registerModItems() {
         //添加进原材料分类中
-        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIG);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIG);
         TrialMod.LOGGER.info("Registering Mod Items");
     }
 }

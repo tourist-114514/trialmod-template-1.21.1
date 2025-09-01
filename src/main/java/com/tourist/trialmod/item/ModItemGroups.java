@@ -27,7 +27,7 @@ public class ModItemGroups {
                             entries.add(ModItems.LEAD_INGOT);
                             //方块
                             entries.add(ModBlocks.LEAD_BLOCK);
-                            entries.add(ModBlocks.NETHER_ASH_BLOCK);
+                            //entries.add(ModBlocks.NETHER_ASH_BLOCK);
                         } )
                         .build());
 

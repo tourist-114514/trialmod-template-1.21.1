@@ -1,7 +1,6 @@
 {
-  "variants": {
-    "": {
-      "model": "trialmod:block/lead_ingot"
-    }
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "trialmod:item/lead_ingot"
   }
 }
