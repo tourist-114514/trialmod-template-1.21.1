@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks{
     public static final Block LEAD_BLOCK=register("lead_block",new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+    public static final Block NETHER_ASH_BLOCK=register("nether_ash_block",new Block(AbstractBlock.Settings.copy(Blocks.SAND)));
     //注册方块物品
     public static void registerBlockItems(String id,Block block){
         //Item item=
